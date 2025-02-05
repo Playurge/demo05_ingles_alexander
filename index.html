@@ -2,37 +2,108 @@
 <html lang="en">
 
 <head>
-    <title>My BCIT Project</title>
-    <meta name="comp1800 template" content="My 1800 App">
-
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap Library CSS CDN go here -->
-    <!-- Boostrap Library JS CDN  go here -->
-
-    <!-- Other libraries go here -->
-
-    <!-- Link to styles of your own -->
-    <!-- <link rel="stylesheet" href="./styles/style.css"> -->
-
+    <title>Hike Spotter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
+<style>
+    .btn-primary {
+        background-color: #198754 !important;
+    }
+</style>
 
 <body>
-
-    <!------------------------------>
-    <!-- Your HTML Layout go here -->
-    <!------------------------------>
-    <!-- Stuff for body goes here -->
-
-
-    <!---------------------------------------------->
-    <!-- Your own JavaScript functions go here    -->
-    <!---------------------------------------------->
-
-    <!-- Link to scripts of your own -->
-    <!-- <script src="./scripts/script.js"></script> -->
+    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img
+                    src="https://cdn.dribbble.com/users/1763872/screenshots/16135669/media/68a0d2ced9ff5ebdfbe5c82f5aa22824.jpg?resize=400x0"
+                    alt="Trackylogo" width="50px" height="50px">Tracky</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login!</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Hike Spotter</h1>
+                <p class="lead text-muted"> Hey you! Welcome back!</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Your spots!</a>
+                    <a href="#" class="btn btn-secondary my-2">Good spots</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="card-group">
+        <div class="card">
+            <img src="https://picsum.photos/200/300?random=1" class="card-img-top"
+                alt="https://picsum.photos/200/300?random=2" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Awesome?</h5>
+                <p class="card-text">Hiking feels awesome and everyone should do it every single day!</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/300?random=3" class="card-img-top"
+                alt="https://picsum.photos/200/300?random=4" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">What is it?</h5>
+                <p class="card-text">Hiking is the act of willingly deciding of your own free will to walk up and down
+                    somthing in a place you dont need to go!</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://picsum.photos/200/300?random=5" class="card-img-top"
+                alt="https://picsum.photos/200/300?random=6" height="300px">
+            <div class="card-body">
+                <h5 class="card-title">Now you dont want to hike?</h5>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus tempora modi
+                    harum soluta laborum! Unde rerum, itaque corrupti optio nesciunt officiis consectetur, a dolorem
+                    provident architecto mollitia accusamus, inventore dolorum!</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
 
 </body>
 
